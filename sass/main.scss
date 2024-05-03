@@ -1,4 +1,29 @@
-// custom variables
+//custom variables
+$font-family-sans-serif: "Barlow", sans-serif;
+$font-size-base: 1.125rem;
+$font-weight-base: 600;
+$display-font-family: "Fraunces", serif;
+$display-font-weight: 900;
+
+//import the functions and variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+    "theme-red": #fe7867,
+    "theme-yellow": #fad400,
+    "theme-dark-cyan": #26574c,
+    "theme-dark-blue": #19536b,
+    "theme-cyan": #458c7e,
+
+    "neutral-blue": #23303e,
+    "neutral-dark-gray": #5a636c,
+    "neutral-gray": #818498,
+    "neutral-light-gray": #a7abae
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
