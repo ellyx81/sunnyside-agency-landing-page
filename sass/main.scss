@@ -4,6 +4,9 @@ $font-size-base: 1.125rem;
 $font-weight-base: 600;
 $display-font-family: "Fraunces", serif;
 $display-font-weight: 900;
+$btn-font-family: "Fraunces", serif;
+$btn-font-size: 1rem;
+$light: #fff;
 
 //import the functions and variables
 @import "../node_modules/bootstrap/scss/_functions";
@@ -24,6 +27,14 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
+$container-max-widths: (
+  xs: 375px,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1400px
+);
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
